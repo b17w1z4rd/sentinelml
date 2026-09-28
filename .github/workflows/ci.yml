@@ -1,0 +1,13 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: sentinelml generate --out /tmp/sentinelml.csv --episodes 300 && sentinelml train --data /tmp/sentinelml.csv --model /tmp/sentinelml.joblib --report /tmp/sentinelml.json

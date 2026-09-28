@@ -1,0 +1,10 @@
+{
+  "file_entropy": 7.2,
+  "file_write_rate": 42,
+  "rename_rate": 24,
+  "process_burst": 12,
+  "dns_query_rate": 18,
+  "rare_domain_ratio": 0.68,
+  "shadow_delete": 1,
+  "unsigned_process": 1
+}

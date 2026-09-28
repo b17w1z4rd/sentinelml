@@ -1,0 +1,45 @@
+{
+  "dataset": "data/synthetic.csv",
+  "synthetic_data_warning": "Demo data only; no real-world performance claim",
+  "seed": 42,
+  "minimum_validation_precision": 0.8,
+  "rows": {
+    "train": 1973,
+    "validation": 647,
+    "test": 643
+  },
+  "episodes": {
+    "train": 360,
+    "validation": 120,
+    "test": 120
+  },
+  "threshold": 0.5512593565508466,
+  "validation": {
+    "average_precision": 0.9211743847712837,
+    "roc_auc": 0.9760086173129652,
+    "brier_score": 0.036393210491967525,
+    "precision": 0.8172043010752689,
+    "recall": 0.8260869565217391,
+    "f1": 0.8216216216216217,
+    "confusion_matrix_tn_fp_fn_tp": [
+      538,
+      17,
+      16,
+      76
+    ]
+  },
+  "test": {
+    "average_precision": 0.9652353760846553,
+    "roc_auc": 0.9842866801893171,
+    "brier_score": 0.03500194955006549,
+    "precision": 0.9285714285714286,
+    "recall": 0.8666666666666667,
+    "f1": 0.896551724137931,
+    "confusion_matrix_tn_fp_fn_tp": [
+      483,
+      10,
+      20,
+      130
+    ]
+  }
+}
